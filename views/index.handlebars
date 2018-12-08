@@ -1,0 +1,256 @@
+<div class="container bg">
+
+   <div class="row">
+       <div class="center col-sm-12">
+           <img src="assets/img/sport.jpg" alt="Rookie Picker App">
+           <h1>Rookie Picker App</h1>
+           <p></p>
+       </div>
+   </div>
+   <!-- end .row -->
+    <div class="video-container">
+       <iframe width="853" height="480" src="//www.youtube.com/embed/RMNubWgRQA0" frameborder="0" allowfullscreen></iframe>
+     </div>
+
+     <div>
+     <table>
+        <thead>
+          <tr>
+              <th>NFL Team</th>
+              <th>Betting odds</th>
+              <th>Current Record</th>
+          </tr>
+        </thead>
+
+        <tbody>
+          <tr>
+            <td>LA Rams</td>
+            <td>+300</td>
+            <td>11-1</td>
+          </tr>
+          <tr>
+            <td>New Orleans Saints</td>
+            <td>+330</td>
+            <td>10-2</td>
+          </tr>
+          <tr>
+              <td>Kansas City Chiefs</td>
+              <td>+550</td>
+              <td>10-2</td>
+          </tr>
+          <tr>
+              <td>New England Patriots</td>
+              <td>+550</td>
+              <td>9-3</td>
+          </tr>
+          <tr>
+              <td>LA Chargers</td>
+              <td>+1100</td>
+              <td>9-3</td>
+          </tr>
+          <tr>
+              <td>Houston Texans</td>
+              <td>+1600</td>
+              <td>9-3</td>
+          </tr>
+          <tr>
+              <td>Pittsburgh Steelers</td>
+              <td>+1600</td>
+              <td>7-4-1</td>
+          </tr>
+          <tr>
+              <td>Chicago Bears</td>
+              <td>+1800</td>
+              <td>8-4</td>
+          </tr>
+          <tr>
+              <td>Dallas Cowboys</td>
+              <td>+2500</td>
+              <td>7-5</td>
+          </tr>
+          <tr>
+              <td>Seattle Seahawks</td>
+              <td>+2800</td>
+              <td>7-5</td>
+          </tr>
+          <tr>
+              <td>Minnesota Vikings</td>
+              <td>+3300</td>
+              <td>6-5-1</td>
+          </tr>
+          <tr>
+              <td>Baltimore Ravens</td>
+              <td>+4000</td>
+              <td>7-5</td>
+          </tr>
+          <tr>
+              <td>Indianapolis Colts</td>
+              <td>+4000</td>
+              <td>6-6</td>
+          </tr>
+          <tr>
+              <td>Philadelphia Eagles</td>
+              <td>+4000</td>
+              <td>6-6</td>
+          </tr>
+          <tr>
+              <td>Denver Broncos</td>
+              <td>+6600</td>
+              <td>6-6</td>
+          </tr>
+          <tr>
+              <td>Carolina Panthers</td>
+              <td>+8000</td>
+              <td>6-6</td>
+          </tr>
+          <tr>
+              <td>Tennessee Titans</td>
+              <td>+8000</td>
+              <td>7-6</td>
+          </tr>
+          <tr>
+              <td>Washington Redskins</td>
+              <td>+12500</td>
+              <td>6-6</td>
+          </tr>
+          <tr>
+              <td>Cincinnati Bengals</td>
+              <td>+20000</td>
+              <td>5-7</td>
+          </tr>
+          <tr>
+              <td>New York Giants</td>
+              <td>+20000</td>
+              <td>4-8</td>
+          </tr>
+          <tr>
+            <td>Cleveland Browns</td>
+            <td>+25000</td>
+            <td>4-7-1</td>
+          </tr>
+          <tr>
+              <td>Green Bay Packers</td>
+              <td>+25000</td>
+              <td>4-7-1</td>
+          </tr>
+          <tr>
+              <td>Miami Dolphins</td>
+              <td>+25000</td>
+              <td>6-6</td>
+          </tr>
+          <tr>
+              <td>Tampa Bay Buccaneers</td>
+              <td>+25000</td>
+              <td>5-7</td>
+          </tr>
+          <tr>
+              <td>Atlanta Falcons</td>
+              <td>+40000</td>
+              <td>4-8</td>
+          </tr>
+          <tr>
+              <td>Detroit Lions</td>
+              <td>+40000</td>
+              <td>4-8</td>
+          </tr>
+          <tr>
+              <td>Jacksonville Jaguars</td>
+              <td>+50000</td>
+              <td>4-9</td>
+          </tr>
+          <tr>
+              <td>Buffalo Bills</td>
+              <td>+100000</td>
+              <td>4-8</td>
+          </tr>
+          <tr>
+              <td>New York Jets</td>
+              <td>+100000</td>
+              <td>3-9</td>
+          </tr>
+          <tr>
+              <td>Arizona Cardinals</td>
+              <td>+300000</td>
+              <td>3-9</td>
+          </tr>
+          <tr>
+              <td>San Francisco 49ers</td>
+              <td>+300000</td>
+              <td>2-10</td>
+          </tr>
+          <tr>
+              <td>Oakland Raiders</td>
+              <td>+500000</td>
+              <td>2-10</td>
+          </tr>
+        </tbody>
+      </table>   
+    </div>
+
+   <div class="row">
+       <div class="col-sm-12">
+
+           <br>
+           <h2>Pick A Team to Wager On!</h2>
+
+           <ul>
+               {{#each nfl_teams}}
+               {{#unless this.user_selected_team}}
+               <li>
+                   {{this.id}}
+                   {{this.NFL_available_teams}}
+
+                   <form action="nfl_team/selection/{{id}}" method="POST" id="test">
+                       <input type="hidden" name="user_selected_team" value="true">
+                       <button class="btn-primary" type="submit">Final Selection!</button>
+                   </form>
+
+               </li>
+               {{/unless}}
+               {{/each}}
+           </ul>
+
+       </div>
+
+       <div class="col-sm-12">
+
+           <h2>Teams Selected!</h2>
+
+           {{#each nfl_teams}}
+           {{#if this.this.user_selected_team}}
+           <li>
+               {{this.id}}
+               {{this.NFL_available_teams}}
+
+           </li>
+           {{/if}}
+           {{/each}}
+
+       </div>
+
+   </div>
+   <!-- end .row -->
+
+   <div class="row">
+       <div class="center col-sm-12">
+
+           <h2>Add A Team!</h2>
+
+           {{!-- <form class="create-update-form" action="/" method="POST"> --}}
+               <form action="nfl_team/create/{{id}}" method="POST" id="create-update-form">
+                   <div class="form-group">
+                       <p>Enter the team that you want to wager on and click the Submit button.</p>
+                       <input type="text" id="inputText" name="NFL_available_teams" placeholder="Enter the team you want to submit here">
+                   </div>
+
+                   <button class="btn-primary" type="submit">Submit</button>
+               </form>
+
+       </div>
+
+   </div>
+   <!-- end .row -->
+
+    
+
+</div>
