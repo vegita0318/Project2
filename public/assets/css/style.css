@@ -1,0 +1,73 @@
+li {
+    padding: 15px;
+    margin: 15px;
+    background: lime;
+    list-style: none;
+    border: 1px black solid;
+ }
+ 
+ ul {
+    list-style: none;
+ }
+ 
+ .center {
+    text-align: center;
+ }
+ 
+ .right {
+    align-content: right;
+ }
+ 
+ img {
+    align-content: center;
+ }
+ 
+ h1 {
+    text-align: center;
+    text-shadow: 2px 2px lightgoldenrodyellow;
+    color: white;
+ }
+ 
+ h2 {
+    text-align: center;
+    text-shadow: 2px 2px lightgoldenrodyellow;
+    color: white;
+ }
+ 
+ #create-update-form {
+    padding: 25px;
+    margin: 25px;
+    background: lime;
+    border: 1px black solid;
+ }
+ 
+ .form-group {
+    margin-bottom: 25px;
+ }
+ 
+ .btn-primary {
+    border-radius: 15px;
+ }
+ 
+ body {
+    color: black;
+    background-image: url("neon.png");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-color: red;
+    font-size: 26px;
+ }
+ 
+ ::placeholder {
+    font-size: 12px;
+ }
+
+ table {
+    padding: 15px;
+    margin: 15px;
+    background: lime;
+    list-style: none;
+    border: 1px black solid; 
+ }

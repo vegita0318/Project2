@@ -1,0 +1,28 @@
+{
+  "name": "Project2",
+  "version": "1.0.0",
+  "description": "Project Title: Hobby Helper Team Members: Shevin W, Larry Fuller, and Garrion Martin created an application that allows the user to view the betting odds on sports franchises (NBA, NHL, MLB, NFL) and select the team that they think will win the championship. The app will store the user's choice and will display it on a linked page.",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/vegita0318/Project2.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/vegita0318/Project2/issues"
+  },
+  "homepage": "https://github.com/vegita0318/Project2#readme",
+  "dependencies": {
+    "body-parser": "^1.18.3",
+    "express": "^4.16.4",
+    "express-handlebars": "^3.0.0",
+    "method-override": "^3.0.0",
+    "mysql": "^2.16.0"
+  }
+}
