@@ -1,7 +1,7 @@
 li {
     padding: 15px;
     margin: 15px;
-    background: lime;
+    background: #ffbf00;
     list-style: none;
     border: 1px black solid;
  }
@@ -24,25 +24,29 @@ li {
  
  h1 {
     text-align: center;
-    text-shadow: 2px 2px lightgoldenrodyellow;
+    text-shadow: 1px 1px lightgoldenrodyellow;
     color: white;
  }
  
  h2 {
     text-align: center;
-    text-shadow: 2px 2px lightgoldenrodyellow;
+    text-shadow: 1px 1px lightgoldenrodyellow;
     color: white;
  }
  
  #create-update-form {
     padding: 25px;
     margin: 25px;
-    background: lime;
+    background: #ffbf00;
     border: 1px black solid;
  }
  
  .form-group {
-    margin-bottom: 25px;
+     margin-bottom: 10px;
+     margin-top: -10px;
+     margin-right: -10px;
+     margin-left: -10px;
+     color:black;
  }
  
  .btn-primary {
@@ -51,7 +55,7 @@ li {
  
  body {
     color: black;
-    background-image: url("neon.png");
+    background-image: url("1.jpg");
     background-position: center center;
     background-repeat: no-repeat;
     background-attachment: fixed;
@@ -62,12 +66,18 @@ li {
  
  ::placeholder {
     font-size: 12px;
+     color: black;
  }
 
  table {
     padding: 15px;
     margin: 15px;
-    background: lime;
+    background: #ffbf00;
     list-style: none;
-    border: 1px black solid; 
+    border: 1px black solid;
+
  }
+
+footer {
+    color: chartreuse;
+}

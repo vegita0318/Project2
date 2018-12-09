@@ -1,7 +1,7 @@
 // import orm.js into rookie_picker.js
 var orm = require('../config/orm.js');
 
-// create the code that will call the ORM functions using burger specific input for the ORM.
+// create the code that will call the ORM functions using specific input for the ORM.
 var nfl_team = 
 {
 
