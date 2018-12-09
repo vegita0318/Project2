@@ -1,5 +1,5 @@
 // Set up MySQL connection.
-const mysql = require("mysql");
+/*const mysql = require("mysql");
 
 const connection = mysql.createConnection({
   port: 3306,
@@ -9,7 +9,9 @@ const connection = mysql.createConnection({
   database: "team_db"
 });
 
-/*var mysql = require('mysql');
+
+*/
+var mysql = require('mysql');
 
 var connection;
 
@@ -24,16 +26,16 @@ if (process.env.JAWSDB_URL) {
     });
 }
 
-*/
+
 
 // Make connection
-connection.connect(function(err){
-    if (err) {
-        console.error("error connecting: " + err.stack);
-        return;
-    }
-    console.log("connected as id: " + connection.threadId);
-});
+connection.connect  ();      //(function(err){
+    //if (err) {
+      //  console.error("error connecting: " + err.stack);
+      // return;
+   // }
+    //console.log("connected as id: " + connection.threadId);
+//});
 
 // Export connection for our ORM to use.
 module.exports = connection;
