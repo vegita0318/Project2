@@ -22,7 +22,7 @@ router.get('/index', function (req, res)
   });
 });
 
-// Create a New Burger
+// Create
 router.post('/nfl_team/create', function (req, res) 
 {
   nfl_team.insertOne(req.body.NFL_available_teams, function() 
@@ -31,7 +31,7 @@ router.post('/nfl_team/create', function (req, res)
   });
 }); 
 
-// Devour a Burger
+// Change
 router.post('/nfl_team/selection/:id', function (req, res) 
 {
   nfl_team.updateOne(req.params.id, function() 
