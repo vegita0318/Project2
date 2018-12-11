@@ -23,7 +23,7 @@ router.get('/index', function (req, res)
  });
 });
 
-// Create
+// Create a list of NFL teams to store before final selection
 router.post('/nfl_team/create', function (req, res)
 {
  nfl_team.insertOne(req.body.NFL_available_teams, function()
@@ -32,7 +32,7 @@ router.post('/nfl_team/create', function (req, res)
  });
 });
 
-//
+// Finalizes team selection for wager
 router.post('/nfl_team/selection/:id', function (req, res)
 {
  nfl_team.updateOne(req.params.id, function()
