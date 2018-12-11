@@ -1,11 +1,10 @@
 {
   "name": "Project2",
   "version": "1.0.0",
-  "description": "Project Title: Hobby Helper Team Members: Shevin W, Larry Fuller, and Garrion Martin created an application that allows the user to view the betting odds on sports franchises (NBA, NHL, MLB, NFL) and select the team that they think will win the championship. The app will store the user's choice and will display it on a linked page.",
+  "description": "Project Title: Rookie Picker Team Members: Shevin W, Larry Fuller, and Garrion Martin created an application that allows the user to view the betting odds on sports franchises (NBA, NHL, MLB, NFL) and select the team that they think will win the championship. The app will store the user's choice and will display it on a linked page.",
   "main": "server.js",
   "scripts": {
-    "test": "mocha || true",
-    "start": "node server.js"
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
